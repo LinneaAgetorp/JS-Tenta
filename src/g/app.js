@@ -135,10 +135,11 @@ const checkoutFunctions = {
         const promises = [];
         for (let i in orders) {
             const order = orders[i];
+            console.log(order);
             const promise = fetch('http://localhost:3000/orders',
                 {
                     method: 'POST',
-                    body: JSON.stringify(orders),
+                    body: JSON.stringify(order),
                     headers: new Headers({'Content-Type': 'application/json'})
                 });
 
@@ -146,14 +147,18 @@ const checkoutFunctions = {
 
         }
         Promise.all(promises)
-            .then(order => {
+            .then(() => {
 
-                alert('Success! You have placed your order! ', JSON.stringify(order, null, 2)); //newOrder
+                alert('Success! You have placed your order! '); //newOrder
 
                 const theCheckoutContainerElement = $('#checkoutCart');
                 theCheckoutContainerElement.empty();
                 //empty shopping cart
                 appState.cart.cart_rows = [];
+
+                //go back to product-view
+                $checkoutWrapper.hide();
+                $productWrapper.show();
             });
     },
 
