@@ -1,0 +1,56 @@
+{
+  "orders": [
+    [
+      {
+        "productId": 3,
+        "count": 3
+      },
+      {
+        "productId": 2,
+        "count": 2
+      }
+    ],
+    [
+      {
+        "productId": 3,
+        "count": 3
+      },
+      {
+        "productId": 2,
+        "count": 2
+      }
+    ],
+    [
+      {
+        "productId": 2,
+        "count": 3
+      },
+      {
+        "productId": 1,
+        "count": 1
+      }
+    ],
+    [
+      {
+        "productId": 2,
+        "count": 3
+      },
+      {
+        "productId": 1,
+        "count": 1
+      }
+    ],
+    [
+      {
+        "productId": 8,
+        "count": 4
+      }
+    ],
+    [
+      {
+        "productId": 8,
+        "count": 3
+      }
+    ]
+  ]
+}

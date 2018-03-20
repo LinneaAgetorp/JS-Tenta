@@ -1,0 +1,10 @@
+{
+    "name": "exam-emmfeh17",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "json-server ./src/g/orders.json"
+    },
+    "devDependencies": {
+        "json-server": "^0.12.1"
+    }
+}

@@ -1,0 +1,1 @@
+// JavaScript för att implementera krav F.
