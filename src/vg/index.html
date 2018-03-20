@@ -9,7 +9,40 @@
 <body>
 
     <!-- HTML för att implementera krav F -->
+    <h2>Fill out the form and press Submit to complete your changes</h2>
 
+
+    <form action=""  name="myForm">
+        <div>
+            <p id="name_err"></p>
+            <div class="input-block">
+                <input type="text" name="name" placeholder=" Name">
+            </div>
+        </div>
+
+        <div>
+            <p id="productID_err"></p>
+            <div class="input-block">
+                <input type="number" name="productID"  placeholder=" Product ID">
+            </div>
+        </div>
+
+        <div>
+            <p id="price_err"></p>
+            <div class="input-block">
+                <input type="number" name="price" placeholder=" Price">
+            </div>
+        </div>
+        <div>
+            <br>
+            <select id="status">
+                <option value="1">OUT_OF_STOCK</option>
+                <option value="2">IN_STOCK</option>
+                <option value="3">DELIVERY_PENDING</option>
+            </select>
+        </div>
+        <button id="submitBtn">Submit</button>
+    </form>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
